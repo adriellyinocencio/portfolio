@@ -550,6 +550,10 @@ section.projects {
 .carousel-slide {
     min-width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide.placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -559,11 +563,11 @@ section.projects {
     text-align: center;
 }
 
-.entry.blue .carousel-slide {
+.entry.blue .carousel-slide.placeholder {
     background: var(--blue-soft);
 }
 
-.entry.pink .carousel-slide {
+.entry.pink .carousel-slide.placeholder {
     background: var(--pink-soft);
 }
 
@@ -582,6 +586,7 @@ section.projects {
 }
 
 .slide-img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
